@@ -13,10 +13,10 @@
     </parent>
 
     <groupId>com.ridestream</groupId>
-    <artifactId>driver-service</artifactId>
+    <artifactId>matching-service</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>Driver Service</name>
-    <description>Driver location tracking and management service</description>
+    <name>Matching Service</name>
+    <description>Driver-rider matching service with Kafka consumer and Redis geospatial queries</description>
 
     <properties>
         <java.version>18</java.version>
@@ -31,23 +31,16 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Spring Data JPA for database access -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-
-        <!-- Spring Kafka for Kafka integration -->
+        <!-- Spring Kafka for consuming messages -->
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
         </dependency>
 
-        <!-- PostgreSQL Driver -->
+        <!-- Spring Data Redis for geo-spatial queries -->
         <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
         <!-- Lombok for reducing boilerplate -->
