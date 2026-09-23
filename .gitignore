@@ -151,3 +151,6 @@ coverage/
 # Kubernetes secrets (if any)
 *-secrets.yml
 *-secret.yml
+
+# local planning notes, never committed
+PLAN.md
