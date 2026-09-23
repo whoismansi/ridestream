@@ -2,7 +2,7 @@ package com.ridestream.rider.service;
 
 import com.ridestream.rider.kafka.RideRequestProducer;
 import com.ridestream.rider.model.RideRequest;
-import com.ridestream.rider.model.RideRequestEvent;
+import com.ridestream.shared.event.RideRequestEvent;
 import com.ridestream.rider.model.RideStatus;
 import com.ridestream.rider.repository.RideRequestRepository;
 import com.ridestream.rider.repository.RiderRepository;

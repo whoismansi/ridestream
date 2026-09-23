@@ -2,8 +2,8 @@ package com.ridestream.driver.service;
 
 import com.ridestream.driver.kafka.LocationProducer;
 import com.ridestream.driver.model.Driver;
-import com.ridestream.driver.model.DriverStatus;
-import com.ridestream.driver.model.LocationUpdate;
+import com.ridestream.shared.event.DriverStatus;
+import com.ridestream.shared.event.LocationUpdate;
 import com.ridestream.driver.repository.DriverRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

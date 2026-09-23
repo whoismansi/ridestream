@@ -1,7 +1,7 @@
 package com.ridestream.driver.controller;
 
 import com.ridestream.driver.model.Driver;
-import com.ridestream.driver.model.DriverStatus;
+import com.ridestream.shared.event.DriverStatus;
 import com.ridestream.driver.service.DriverService;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;

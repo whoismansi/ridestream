@@ -6,25 +6,22 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.0</version>
-        <relativePath/>
+        <groupId>com.ridestream</groupId>
+        <artifactId>ridestream-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.ridestream</groupId>
     <artifactId>driver-service</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
     <name>Driver Service</name>
     <description>Driver location tracking and management service</description>
 
-    <properties>
-        <java.version>18</java.version>
-        <spring-kafka.version>3.1.0</spring-kafka.version>
-        <lombok.version>edge-SNAPSHOT</lombok.version>
-    </properties>
-
     <dependencies>
+        <!-- shared kafka event contracts -->
+        <dependency>
+            <groupId>com.ridestream</groupId>
+            <artifactId>shared-models</artifactId>
+        </dependency>
+
         <!-- Spring Boot Web for REST APIs -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -48,13 +45,6 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
-        </dependency>
-
-        <!-- Lombok for reducing boilerplate -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
         </dependency>
 
         <!-- Validation -->
@@ -94,28 +84,8 @@
         </dependency>
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>projectlombok.org</id>
-            <url>https://projectlombok.org/edge-releases</url>
-        </repository>
-    </repositories>
-
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>${lombok.version}</version>
-                        </path>
-                    </annotationProcessorPaths>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

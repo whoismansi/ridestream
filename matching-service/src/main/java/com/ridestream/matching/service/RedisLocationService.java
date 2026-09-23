@@ -1,7 +1,7 @@
 package com.ridestream.matching.service;
 
-import com.ridestream.matching.model.DriverStatus;
-import com.ridestream.matching.model.LocationUpdate;
+import com.ridestream.shared.event.DriverStatus;
+import com.ridestream.shared.event.LocationUpdate;
 import com.ridestream.matching.model.NearbyDriverResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

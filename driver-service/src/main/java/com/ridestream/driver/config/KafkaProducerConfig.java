@@ -1,6 +1,6 @@
 package com.ridestream.driver.config;
 
-import com.ridestream.driver.model.LocationUpdate;
+import com.ridestream.shared.event.LocationUpdate;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;

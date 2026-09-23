@@ -1,7 +1,7 @@
 package com.ridestream.driver.repository;
 
 import com.ridestream.driver.model.Driver;
-import com.ridestream.driver.model.DriverStatus;
+import com.ridestream.shared.event.DriverStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

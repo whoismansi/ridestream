@@ -1,6 +1,6 @@
 package com.ridestream.matching.config;
 
-import com.ridestream.matching.model.LocationUpdate;
+import com.ridestream.shared.event.LocationUpdate;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.beans.factory.annotation.Value;

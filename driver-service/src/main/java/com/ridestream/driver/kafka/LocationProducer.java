@@ -1,6 +1,6 @@
 package com.ridestream.driver.kafka;
 
-import com.ridestream.driver.model.LocationUpdate;
+import com.ridestream.shared.event.LocationUpdate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

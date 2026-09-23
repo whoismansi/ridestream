@@ -1,6 +1,6 @@
 package com.ridestream.matching.kafka;
 
-import com.ridestream.matching.model.LocationUpdate;
+import com.ridestream.shared.event.LocationUpdate;
 import com.ridestream.matching.service.RedisLocationService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,5 +1,7 @@
 package com.ridestream.driver.model;
 
+import com.ridestream.shared.event.DriverStatus;
+
 import java.time.Instant;
 import java.util.UUID;
 

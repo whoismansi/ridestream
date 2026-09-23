@@ -1,5 +1,7 @@
 package com.ridestream.matching.model;
 
+import com.ridestream.shared.event.DriverStatus;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

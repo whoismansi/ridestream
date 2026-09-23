@@ -6,24 +6,22 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.0</version>
-        <relativePath/>
+        <groupId>com.ridestream</groupId>
+        <artifactId>ridestream-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.ridestream</groupId>
     <artifactId>rider-service</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
     <name>Rider Service</name>
     <description>Ride request service</description>
 
-    <properties>
-        <java.version>17</java.version>
-        <spring-kafka.version>3.1.0</spring-kafka.version>
-    </properties>
-
     <dependencies>
+        <!-- shared kafka event contracts -->
+        <dependency>
+            <groupId>com.ridestream</groupId>
+            <artifactId>shared-models</artifactId>
+        </dependency>
+
         <!-- Spring Boot Web for REST APIs -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -47,13 +45,6 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
-        </dependency>
-
-        <!-- Lombok for reducing boilerplate -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
         </dependency>
 
         <!-- Validation -->
