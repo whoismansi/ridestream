@@ -152,6 +152,5 @@ coverage/
 *-secrets.yml
 *-secret.yml
 
-# local planning notes, never committed
-PLAN.md
-docs/plan/
+# local notes and docs
+docs/

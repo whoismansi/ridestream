@@ -101,8 +101,6 @@ curl -X PUT http://localhost:8081/api/drivers/<driver-id>/location \
 curl "http://localhost:8082/api/matching/nearby?latitude=42.3601&longitude=-71.0589&radius=5000"
 ```
 
-A Postman collection for driver-service is in [`docs/postman/`](docs/postman/).
-
 ## API
 
 **driver-service** `:8081`
